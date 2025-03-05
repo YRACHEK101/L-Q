@@ -45,10 +45,10 @@ const OrdersPage = () => {
   ];
 
   return (
-    <div className="max-w-screen-xl mx-auto w-full bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 my-4 ">
+    <div className="max-w-screen-xl mx-auto w-full bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 my-4">
       <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white ">
-          Orders
+        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+          Commandes
         </h2>
         <OrderSearch />
       </div>
@@ -57,23 +57,23 @@ const OrdersPage = () => {
           <thead className="bg-gray-50 dark:bg-gray-700">
             <tr>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Order Number
+                Numéro de Commande
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Customer Name
+                Nom du Client
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Date
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Status
+                Statut
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Actions
               </th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-200 dark:divide-gray-700 ">
+          <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
             {orders.map((order) => (
               <tr key={order.id} className="bg-white dark:bg-gray-800">
                 <td className="px-6 py-4 whitespace-nowrap">
@@ -93,7 +93,13 @@ const OrdersPage = () => {
                         : "bg-blue-100 text-blue-800"
                     }`}
                   >
-                    {order.status}
+                    {order.status === "Shipped"
+                      ? "Expédié"
+                      : order.status === "Pending"
+                      ? "En attente"
+                      : order.status === "Delivered"
+                      ? "Livré"
+                      : order.status}
                   </span>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
@@ -103,7 +109,6 @@ const OrdersPage = () => {
             ))}
           </tbody>
         </table>
-        {/* replace these data with your acctuall data */}
         <Suspense fallback={<Loader />}>
           <Pagination currentPage={1} pageName="orderpage" totalPages={10} />
         </Suspense>

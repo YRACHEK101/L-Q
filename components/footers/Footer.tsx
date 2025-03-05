@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto p-4 md:p-8 flex md:flex-row  flex-wrap gap-4 md:gap-2 justify-between">
         <div className="flex flex-col space-y-4 mb-8 md:mb-0">
           <Logo />
-          <p>Your one-stop shop for all things electronics.</p>
+          <p>Votre destination unique pour tous vos besoins en électronique.</p>
           <div className="flex space-x-4">
             <Link
               href="www.facebook.com"
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col space-y-4">
-          <h3 className="text-xl font-semibold">Categories</h3>
+          <h3 className="text-xl font-semibold">Catégories</h3>
           <ul className="space-y-2">
             {dummyCategories.map(category => (
               <li key={category.name}>
@@ -58,7 +58,7 @@ const Footer = () => {
                 href="/"
                 className=""
               >
-                Home
+                Accueil
               </Link>
             </li>
             <li>
@@ -66,7 +66,7 @@ const Footer = () => {
                 href="/about"
                 className=""
               >
-                About Us
+                À Propos
               </Link>
             </li>
             <li>
@@ -74,7 +74,7 @@ const Footer = () => {
                 href="/contact"
                 className=""
               >
-                Contact Us
+                Nous Contacter
               </Link>
             </li>
             <li>
@@ -82,7 +82,7 @@ const Footer = () => {
                 href="/shop"
                 className=""
               >
-                Shop
+                Boutique
               </Link>
             </li>
           </ul>
@@ -95,7 +95,7 @@ const Footer = () => {
                 href="/help"
                 className=""
               >
-                Help Center
+                Centre d'Aide
               </Link>
             </li>
             <li>
@@ -103,7 +103,7 @@ const Footer = () => {
                 href="#"
                 className=""
               >
-                Returns & Refunds
+                Retours et Remboursements
               </Link>
             </li>
             <li>
@@ -111,7 +111,7 @@ const Footer = () => {
                 href="#"
                 className=""
               >
-                Terms of Service
+                Conditions d'Utilisation
               </Link>
             </li>
             <li>
@@ -119,7 +119,7 @@ const Footer = () => {
                 href="#"
                 className=""
               >
-                Privacy Policy
+                Politique de Confidentialité
               </Link>
             </li>
           </ul>
@@ -127,7 +127,7 @@ const Footer = () => {
       </div>
       <hr className="w-full h-[2px] bg-white" />
       <div className="text-center mt-8">
-        <p>&copy; 2024 Your Brand Name. All Rights Reserved.</p>
+        <p>&copy; 2024 Votre Nom de Marque. Tous droits réservés.</p>
       </div>
     </footer>
   );

@@ -13,13 +13,13 @@ const CategoryPage = () => {
       <div >
         <div className="flex items-center justify-between mb-6">
           <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-            Browse Categories
+            Parcourir les Catégories
           </h1>
           <Link
             href={"/dashboard/categories/add-category"}
             className="py-2 px-6 rounded-md bg-blue-500 hover:opacity-60 text-white"
           >
-            Add Category
+            Ajouter une Catégorie
           </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -54,7 +54,7 @@ const CategoryPage = () => {
                     </PopoverTrigger>
                     <PopoverContent className="text-start">
                       <button className="w-full text-start hover:bg-slate-200 dark:hover:bg-slate-900 py-2 px-4 rounded-md">
-                        Delete Category
+                        Supprimer la Catégorie
                       </button>
                     </PopoverContent>
                   </Popover>

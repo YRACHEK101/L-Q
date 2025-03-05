@@ -12,7 +12,7 @@ const BlogsPage = () => {
     <div className="max-w-screen-xl w-full my-4 mx-auto p-4">
       <div className="flex justify-between mb-6 gap-2">
         <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
-          Blogs
+          Articles
         </h2>
         <div className="flex items-center gap-4">
           <SearchBlogs />
@@ -20,7 +20,7 @@ const BlogsPage = () => {
             href={"/dashboard/blogs/add-blog"}
             className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg whitespace-nowrap"
           >
-            Create Blog
+            Créer un Article
           </Link>
         </div>
       </div>
@@ -43,7 +43,7 @@ const BlogsPage = () => {
                 {blog.title}
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
-                <span className="font-semibold">Author:</span> {blog.author} |{" "}
+                <span className="font-semibold">Auteur:</span> {blog.author} |{" "}
                 <span className="font-semibold">Date:</span>{" "}
                 {blog.date.toDateString()}
               </p>
