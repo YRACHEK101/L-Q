@@ -1,7 +1,7 @@
 export const cartData = [
     {
         id:1,
-        name:'Apple iPhone 15 Pro Max (256 GB) - Blue Titanium',
+        name:'Apple iPhone 15 Pro Max (256 Go) - Titane Bleu',
         category:'Smartphones',
         price:1400,
         discount:10,
@@ -10,8 +10,8 @@ export const cartData = [
     },
     {
         id:2,
-        name:'Victus Powerfull Gaming Laptop',
-        category:'Computers',
+        name:'PC Portable Gaming Victus Puissant',
+        category:'Ordinateurs',
         price:3300,
         quantity:4,
         discount:10,

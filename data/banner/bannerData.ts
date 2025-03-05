@@ -1,27 +1,26 @@
-
 export const bannerData = [
     {
-        title:'Dominate the Competition with the Legion X7',
-        description:'Unleash ultimate gaming power with the Legion X7. Featuring a top-of-the-line processor, powerful graphics card, and a high-refresh-rate display.',
-        images:['/images/banner/gaming-laptop.png'],
-        button:'Shop Gaming Laptops',
-        discountText:'Buy now Get 10% off',
+        title: 'Dominez la compétition avec le Legion X7',
+        description: 'Libérez une puissance de jeu ultime avec le Legion X7. Équipé d\'un processeur haut de gamme, d\'une carte graphique puissante et d\'un écran à taux de rafraîchissement élevé.',
+        images: ['/images/banner/gaming-laptop.png'],
+        button: 'Acheter des PC Gaming',
+        discountText: 'Achetez maintenant et obtenez 10% de réduction',
         link: `shop?category=Computers`
     },
     {
-        title:'Introducing the All-New NovaPhone 15',
-        description:'Experience unparalleled performance with our most advanced phone yet. Blazing-fast processor, stunning camera system, and a revolutionary display.',
-        images:['/images/banner/iphone.png'],
-        button:'Order Now',
-        discountText:'Buy now Get 5% off',
-        link:`shop?category=Smartphones`
+        title: 'Découvrez le Tout Nouveau NovaPhone 15',
+        description: 'Découvrez des performances inégalées avec notre téléphone le plus avancé. Processeur ultra-rapide, système photo impressionnant et un écran révolutionnaire.',
+        images: ['/images/banner/iphone.png'],
+        button: 'Commander Maintenant',
+        discountText: 'Achetez maintenant et obtenez 5% de réduction',
+        link: `shop?category=Smartphones`
     },
     {
-        title:'High-resolution noise-canceling headphones.',
-        description:'Immerse Yourself in Pure Sound with the SonicPro Max',
-        images:['/images/banner/headphone.png'],
-        button:'Shop Headphones',
-        discountText:'Buy now Get 15% off',
-        link:'shop?category=Headphones'
+        title: 'Casque à réduction de bruit haute résolution',
+        description: 'Plongez dans un son pur avec le SonicPro Max',
+        images: ['/images/banner/headphone.png'],
+        button: 'Acheter des Casques',
+        discountText: 'Achetez maintenant et obtenez 15% de réduction',
+        link: 'shop?category=Headphones'
     },
 ]

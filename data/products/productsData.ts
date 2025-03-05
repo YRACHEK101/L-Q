@@ -1,14 +1,14 @@
 export const productsData = [
   {
     id: 1,
-    name: "Apple Watch Series 9 [GPS 45mm] Smartwatch with Midnight Aluminum Case",
-    category: "Watches",
+    name: "Apple Watch Series 9 [GPS 45mm] Montre Connectée avec Boîtier Aluminium Minuit",
+    category: "Montres",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio voluptatem aliquam reprehenderit debitis quidem accusantium quas reiciendis quae, enim nesciunt, illo sit ea aspernatur quo perferendis! Cumque fuga impedit corrupti!",
+      "Découvrez une expérience unique avec notre dernière montre connectée. Design élégant et fonctionnalités avancées pour votre style de vie moderne.",
     aboutItem: [
-      "WHY APPLE WATCH SERIES 9 — Your essential companion for a healthy life is now even more powerful. The S9 chip enables a super-bright display and a magical new way to quickly and easily interact with your Apple Watch without touching the screen. Advanced health, safety and activity features provide powerful insights and help when you need it. And redesigned apps in watchOS give you more information at a glance.",
-      "CARBON NEUTRAL — An aluminium Apple Watch Series 9 paired with the latest Sport Loop is carbon neutral.",
-      "ADVANCED HEALTH FEATURES—Keep an eye on your blood oxygen. Take an ECG anytime. Get notifications if you have an irregular heart rhythm. See how much time you spent in REM, Core, or Deep sleep with sleep stages. Temperature sensing provides insights into overall well-being and cycle tracking. And take note of your state of mind to help build emotional awareness and resilience."
+      "POURQUOI LA APPLE WATCH SERIES 9 — Votre compagnon essentiel pour une vie saine est maintenant encore plus puissant. La puce S9 permet un écran super lumineux et une nouvelle façon magique d'interagir avec votre Apple Watch sans toucher l'écran.",
+      "NEUTRE EN CARBONE — Une Apple Watch Series 9 en aluminium associée au dernier Sport Loop est neutre en carbone.",
+      "FONCTIONNALITÉS DE SANTÉ AVANCÉES — Surveillez votre taux d'oxygène dans le sang. Faites un ECG à tout moment. Recevez des notifications en cas de rythme cardiaque irrégulier. Suivez vos phases de sommeil et votre bien-être général."
     ],
     price: 400,
     discount: 10,
@@ -16,15 +16,15 @@ export const productsData = [
     stockItems: 5,
     reviews: [
       {
-        content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio voluptatem aliquam reprehenderit debitis quidem accusantium",
-        rating:4,
-        author: "Shohag miah",
+        content: "Excellente montre connectée, parfaite pour le quotidien",
+        rating: 4,
+        author: "Jean Dupont",
         image: "/images/people/person.jpg",
         date: new Date(),
       },
     ],
     brand: "Apple",
-    color: ['white', 'gray', 'blue','silver'],
+    color: ['blanc', 'gris', 'bleu', 'argent'],
     images: [
       "/images/products/apple-watch-9-removebg-preview.png",
       "/images/products/apple-watch-9-3-removebg-preview.png",

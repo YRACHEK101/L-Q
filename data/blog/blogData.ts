@@ -1,126 +1,125 @@
 export const blogPosts = [
   {
-    title: "Top 5 Must-Have Gadgets for Students in 2024",
-    author: "John Doe (Tech Enthusiast)",
-    category: "Tech Trends",
+    title: "Top 5 des Gadgets Indispensables pour les Étudiants en 2024",
+    author: "Jean Dupont (Expert Tech)",
+    category: "Tendances Tech",
     image: "/images/products/senheiser-removebg-preview.png",
     excerpt:
-      "Struggling to keep up with the latest tech trends as a student? This blog post dives into the top 5 gadgets that can help you ace your studies, stay organized, and have some fun on the go!",
+      "Vous avez du mal à suivre les dernières tendances technologiques en tant qu'étudiant ? Cet article présente les 5 gadgets qui peuvent vous aider à réussir vos études, rester organisé et vous divertir en déplacement !",
     content: [
       {
         type: "text",
-        text: `Imagine juggling classes, assignments, and a busy social life. Staying organized and productive can be a challenge. But fear not, tech enthusiasts! Here are the top 5 gadgets every student should consider in 2024:`,
+        text: `Imaginez jongler entre les cours, les devoirs et une vie sociale bien remplie. Rester organisé et productif peut être un défi. Mais ne vous inquiétez pas, passionnés de tech ! Voici les 5 gadgets que chaque étudiant devrait envisager en 2024 :`,
       },
       {
         type: "image",
         src: "/images/products/prothonics-removebg-preview.png",
-        alt: "Noise-Canceling Headphones",
+        alt: "Casque à Réduction de Bruit",
       },
       {
         type: "text",
-        text: `1. Noise-Canceling Headphones: Block out distractions in the library or dorm room with a pair of noise-canceling headphones. Focus on lectures, study sessions, or simply unwind with your favorite music without the background noise.`,
+        text: `1. Casque à Réduction de Bruit : Bloquez les distractions à la bibliothèque ou dans votre chambre avec un casque à réduction de bruit. Concentrez-vous sur les cours, les sessions d'étude, ou détendez-vous simplement avec votre musique préférée sans bruit de fond.`,
       },
       {
         type: "text",
-        text: `2. Portable Charger: A reliable portable charger ensures your devices stay powered throughout the day. Whether you're attending back-to-back classes or exploring campus, a portable charger keeps you connected and avoids the dreaded low-battery anxiety.`,
+        text: `2. Chargeur Portable : Un chargeur portable fiable garantit que vos appareils restent alimentés toute la journée. Que vous assistiez à des cours consécutifs ou exploriez le campus, un chargeur portable vous garde connecté et évite l'anxiété de la batterie faible.`,
       },
       {
         type: "text",
-        text: `3. Tablet with Stylus: Take note-taking to a whole new level with a tablet and stylus combo. Ditch bulky notebooks and scribble down ideas, annotate documents, or create mind maps with ease. The portability and versatility of a tablet make it a valuable tool for on-the-go learning.`,
+        text: `3. Tablette avec Stylet : Passez la prise de notes à un niveau supérieur avec une tablette et son stylet. Abandonnez les cahiers encombrants et griffonnez des idées, annotez des documents ou créez des cartes mentales facilement. La portabilité et la polyvalence d'une tablette en font un outil précieux pour l'apprentissage mobile.`,
       },
       {
         type: "image",
         src: "/images/products/apple-watch-9-3-removebg-preview.png",
-        alt: "Smartwatch",
+        alt: "Montre Connectée",
       },
       {
         type: "text",
-        text: `4. Smartwatch: Stay organized and manage your time effectively with a smartwatch. Set reminders for deadlines, track your daily activity, and even receive notifications without needing to reach for your phone every time.`,
+        text: `4. Montre Connectée : Restez organisé et gérez votre temps efficacement avec une montre connectée. Définissez des rappels pour les échéances, suivez votre activité quotidienne et recevez même des notifications sans avoir à sortir votre téléphone.`,
       },
       {
         type: "text",
-        text: `5. Wireless Earbuds: Convenience meets quality with a pair of wireless earbuds. Enjoy crystal-clear audio while studying, listening to podcasts, or taking calls without the hassle of tangled wires.`,
+        text: `5. Écouteurs Sans Fil : La commodité rencontre la qualité avec une paire d'écouteurs sans fil. Profitez d'un son cristallin pour étudier, écouter des podcasts ou passer des appels sans tracas de fils emmêlés.`,
       },
     ],
     date: new Date(),
   },
   {
-    title: "The Ultimate Guide to Choosing the Perfect Gaming Laptop",
-    author: "Jane Smith (Gaming Expert)",
+    title: "Le Guide Ultime pour Choisir le PC Portable Gaming Parfait",
+    author: "Marie Martin (Experte Gaming)",
     category: "Gaming",
     image: "/images/products/asus-vivobook-removebg-preview.png",
     excerpt:
-      "Overwhelmed by the vast selection of gaming laptops? Fear not! This comprehensive guide will break down the key factors to consider when choosing the perfect machine for your gaming needs, ensuring smooth gameplay and an immersive experience.",
+      "Submergé par la vaste sélection de PC portables gaming ? Ne vous inquiétez pas ! Ce guide complet détaillera les facteurs clés à considérer lors du choix de la machine parfaite pour vos besoins en gaming, assurant un gameplay fluide et une expérience immersive.",
     content: [
       {
         type: "text",
-        text: "Your gaming laptop is your ultimate weapon in the virtual battlefield. But with so many options available, choosing the perfect gaming laptop can be a daunting task. Fear not, fellow gamers! Here's a comprehensive guide to help you make the right choice:",
+        text: "Votre PC portable gaming est votre arme ultime sur le champ de bataille virtuel. Mais avec tant d'options disponibles, choisir le PC portable gaming parfait peut être une tâche intimidante. Ne craignez rien, chers gamers ! Voici un guide complet pour vous aider à faire le bon choix :",
       },
       {
         type: "text",
-        text: "1. Graphics Processing Unit (GPU): The GPU is the heart of a gaming laptop. It determines the quality of graphics and directly impacts gaming performance. Opt for a laptop with a powerful GPU from reputable brands like NVIDIA or AMD.",
+        text: "1. Carte Graphique (GPU) : Le GPU est le cœur d'un PC portable gaming. Il détermine la qualité des graphismes et impacte directement les performances de jeu. Optez pour un portable avec un GPU puissant de marques réputées comme NVIDIA ou AMD.",
       },
       {
         type: "image",
         src: "/images/products/msi-modern-14-2-removebg-preview.png",
-        alt: "Graphics Card",
+        alt: "Carte Graphique",
       },
       {
         type: "text",
-        text: "2. Processor (CPU): A high-performance CPU is essential for smooth gameplay and multitasking. Look for laptops equipped with the latest generation processors from Intel or AMD, with a focus on clock speed and core count.",
-      },
-
-      {
-        type: "text",
-        text: "3. Display: The display is your window into the gaming world. Choose a laptop with a high refresh rate and resolution for immersive gaming experiences. Consider features like G-Sync or FreeSync for tear-free gaming.",
+        text: "2. Processeur (CPU) : Un CPU performant est essentiel pour un gameplay fluide et le multitâche. Recherchez des portables équipés des dernières générations de processeurs Intel ou AMD, en mettant l'accent sur la fréquence d'horloge et le nombre de cœurs.",
       },
       {
         type: "text",
-        text: "4. RAM and Storage: Adequate RAM ensures smooth multitasking, while fast storage options like SSDs reduce load times and improve overall system responsiveness. Aim for at least 16GB of RAM and SSD storage for optimal performance.",
+        text: "3. Écran : L'écran est votre fenêtre sur le monde du gaming. Choisissez un portable avec un taux de rafraîchissement élevé et une bonne résolution pour des expériences de jeu immersives. Considérez les fonctionnalités comme G-Sync ou FreeSync pour un gaming sans déchirure d'image.",
       },
       {
         type: "text",
-        text: "5. Cooling System: Intense gaming sessions can push your laptop's temperature to the limit. Look for laptops with efficient cooling systems, featuring multiple heat pipes, fans, and vapor chambers to keep temperatures in check.",
+        text: "4. RAM et Stockage : Une RAM adéquate assure un multitâche fluide, tandis que des options de stockage rapide comme les SSD réduisent les temps de chargement et améliorent la réactivité globale du système. Visez au moins 16 Go de RAM et un stockage SSD pour des performances optimales.",
+      },
+      {
+        type: "text",
+        text: "5. Système de Refroidissement : Les sessions de jeu intenses peuvent pousser la température de votre portable à la limite. Recherchez des portables avec des systèmes de refroidissement efficaces, comprenant plusieurs caloducs, ventilateurs et chambres à vapeur pour maintenir les températures sous contrôle.",
       },
     ],
     date: new Date(),
   },
   {
-    title: "Smart Home Devices That Make Your Life Easier",
-    author: "David Lee (Tech Lifestyle Blogger)",
-    category: "Smart Home",
+    title: "Les Appareils Connectés qui Simplifient Votre Vie",
+    author: "Lucas Bernard (Blogueur Tech Lifestyle)",
+    category: "Maison Connectée",
     image: "/images/products/galaxy-15-removebg-preview.png",
     excerpt:
-      "Take control of your home with the power of smart technology! This blog post explores a variety of smart home devices that can automate tasks, improve your security, and even boost your energy efficiency.",
+      "Prenez le contrôle de votre maison avec la puissance de la technologie intelligente ! Cet article explore une variété d'appareils connectés qui peuvent automatiser les tâches, améliorer votre sécurité et même augmenter votre efficacité énergétique.",
     content: [
       {
         type: "text",
-        text: "Transform your home into a futuristic oasis with smart home devices that bring convenience, comfort, and efficiency to your fingertips. From automated lighting to intelligent thermostats, here are some must-have smart home devices:",
+        text: "Transformez votre maison en une oasis futuriste avec des appareils connectés qui apportent commodité, confort et efficacité au bout de vos doigts. Des éclairages automatisés aux thermostats intelligents, voici quelques appareils connectés indispensables :",
       },
       {
         type: "text",
-        text: "1. Smart Thermostat: Regulate your home's temperature with precision and efficiency using a smart thermostat. Control your heating and cooling systems remotely, set schedules, and optimize energy usage to save on utility bills.",
+        text: "1. Thermostat Intelligent : Réglez la température de votre maison avec précision et efficacité grâce à un thermostat intelligent. Contrôlez vos systèmes de chauffage et de climatisation à distance, définissez des programmes et optimisez la consommation d'énergie pour réduire vos factures.",
       },
       {
         type: "text",
-        text: "2. Smart Lighting: Illuminate your home with smart lighting solutions that offer customizable brightness, color options, and scheduling capabilities. Enjoy the convenience of controlling your lights from anywhere via smartphone or voice commands.",
+        text: "2. Éclairage Intelligent : Illuminez votre maison avec des solutions d'éclairage intelligent offrant une luminosité personnalisable, des options de couleur et des capacités de programmation. Profitez de la commodité de contrôler vos lumières de n'importe où via smartphone ou commandes vocales.",
       },
       {
         type: "image",
         src: "/images/products/apple-watch-se-2-removebg-preview.png",
-        alt: "Smart Lighting",
+        alt: "Éclairage Intelligent",
       },
       {
         type: "text",
-        text: "3. Smart Security Cameras: Keep an eye on your home while you're away with smart security cameras that offer live streaming, motion detection, and two-way audio capabilities. Monitor your property from anywhere with peace of mind.",
+        text: "3. Caméras de Sécurité Connectées : Gardez un œil sur votre maison pendant votre absence avec des caméras de sécurité intelligentes offrant la diffusion en direct, la détection de mouvement et des capacités audio bidirectionnelles. Surveillez votre propriété de n'importe où en toute tranquillité.",
       },
       {
         type: "text",
-        text: "4. Smart Locks: Ditch the traditional keys and upgrade to smart locks for enhanced security and convenience. Grant access to family members, friends, or service providers remotely and receive instant alerts for unauthorized access attempts.",
+        text: "4. Serrures Connectées : Abandonnez les clés traditionnelles et passez aux serrures connectées pour une sécurité et une commodité accrues. Accordez l'accès aux membres de la famille, aux amis ou aux prestataires de services à distance et recevez des alertes instantanées en cas de tentatives d'accès non autorisées.",
       },
       {
         type: "text",
-        text: "5. Smart Plugs: Transform your ordinary appliances into smart devices with smart plugs. Schedule your devices to turn on or off automatically, monitor energy consumption, and control them remotely for added convenience and energy savings.",
+        text: "5. Prises Connectées : Transformez vos appareils ordinaires en appareils intelligents avec des prises connectées. Programmez vos appareils pour qu'ils s'allument ou s'éteignent automatiquement, surveillez la consommation d'énergie et contrôlez-les à distance pour plus de commodité et d'économies d'énergie.",
       },
     ],
     date: new Date(),
