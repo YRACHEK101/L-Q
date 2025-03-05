@@ -14,7 +14,7 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: "L&Q",
-  description: "your ultimate gadgets shop",
+  description: "Votre boutique ultime de gadgets",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased hide-scrollbar",
