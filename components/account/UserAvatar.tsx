@@ -9,7 +9,7 @@ const UserAvatar = () => {
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
       <div>
-        <h2 className="font-semibold text-lg">Welcome,</h2>
+        <h2 className="font-semibold text-lg">Bienvenue,</h2>
         <p className="-mt-1">Shohag Miah</p>
       </div>
     </div>
