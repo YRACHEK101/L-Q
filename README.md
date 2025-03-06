@@ -1,22 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# L&Q Project
 
-## Getting Started
+A modern web application built with Next.js and TypeScript, featuring a robust UI component system and state management.
 
-First, run the development server:
+## 🚀 Features
 
+- Next.js 14 with App Router
+- TypeScript for type safety
+- Shadcn UI components
+- Tailwind CSS for styling
+- Zustand for state management
+- React Hook Form for form handling
+- Custom error handling
+- Dark mode support
+
+## 🛠️ Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Shadcn UI](https://ui.shadcn.com/)
+- [Zustand](https://github.com/pmndrs/zustand)
+- [React Hook Form](https://react-hook-form.com/)
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd L-Q
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## 🔧 Configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The project includes several configuration files:
 
-product live link:https://tech-bazer-skshohagmiahs-projects.vercel.app/
+- `next.config.mjs` - Next.js configuration
+- `tailwind.config.ts` - Tailwind CSS configuration
+- `tsconfig.json` - TypeScript configuration
+- `components.json` - Shadcn UI configuration
 
-## Deploy on Vercel
+## 📁 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+L-Q/
+├── app/
+│   ├── globals.css
+│   └── error.tsx
+├── components/
+│   └── ui/
+├── lib/
+├── public/
+└── ...configuration files
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
