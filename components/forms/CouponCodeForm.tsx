@@ -13,7 +13,7 @@ const CouponCodeForm = () => {
   const handleForSubmission = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     applyCoupon(coupon);
-    toast("Coupon Applied Succesfully");
+    toast("Code promo appliqué avec succès");
   };
 
   return (
@@ -23,17 +23,17 @@ const CouponCodeForm = () => {
           className="text-xl font-semibold text-gray-900 dark:text-white mb-4"
           htmlFor="coupon"
         >
-          Enter Your Coupon Code
+          Entrez Votre Code Promo
         </Label>
         <Input
           id="coupon"
           value={coupon}
           onChange={(e) => setCoupon(e.target.value)}
-          placeholder="e,g write YOUR_COUPON_CODE"
+          placeholder="ex : VOTRE_CODE_PROMO"
           className="w-full p-6 rounded-md"
         />
         <div className="flex items-center justify-end">
-          <Button>Submit</Button>
+          <Button>Valider</Button>
         </div>
       </form>
     </div>

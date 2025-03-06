@@ -31,13 +31,13 @@ const SingleProductListView = ({ product }: { product: Product }) => {
           </h3>
         </div>
         <RatingReview rating={rating} review={reviews.length} />
-        <div className="text-lg font-bold space-x-2 my-4 ">
-          <span className="line-through text-muted-foreground">${price}</span>
+        <div className="text-lg font-bold space-x-2 my-4">
+          <span className="line-through text-muted-foreground">{price}€</span>
           <span className="text-xl font-bold text-green-500">
-            ${discountPrice}
+            {discountPrice}€
           </span>
         </div>
-        <div className=" text-sm">
+        <div className="text-sm">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam
           consequatur, corporis magnam quibusdam quae minima quidem. Quis
           nostrum laboriosam libero culpa expedita a repellendus, officiis,

@@ -10,14 +10,14 @@ import { Bell } from "lucide-react";
 const Notification = () => {
 
   const notifications = [
-    { id: 1, message: "New order received from John Doe", time: "10:00 AM" },
-    { id: 2, message: "Payment processed for order #123456", time: "10:30 AM" },
-    { id: 3, message: "Low stock alert: Item XYZ", time: "11:00 AM" },
-    { id: 4, message: "Shipment for order #123457 delayed", time: "11:30 AM" },
+    { id: 1, message: "Nouvelle commande reçue de John Doe", time: "10:00" },
+    { id: 2, message: "Paiement traité pour la commande #123456", time: "10:30" },
+    { id: 3, message: "Alerte stock bas : Article XYZ", time: "11:00" },
+    { id: 4, message: "Livraison retardée pour la commande #123457", time: "11:30" },
     {
       id: 5,
-      message: "New review submitted for product ABC",
-      time: "12:00 PM",
+      message: "Nouvel avis client pour le produit ABC",
+      time: "12:00",
     },
   ];
 

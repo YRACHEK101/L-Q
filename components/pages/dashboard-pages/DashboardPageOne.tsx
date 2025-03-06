@@ -11,26 +11,25 @@ const DashboardPageOne = () => {
       <div className="grid gap-2 lg:gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <StatisticsCard
           iconColor="bg-rose-500"
-          title="Revenue"
+          title="Revenus"
           value="$10,000"
           icon={DollarSign}
         />
         <StatisticsCard
           iconColor="bg-lime-500"
-          title="Sales"
+          title="Ventes"
           value="$1,000"
           icon={ShoppingBag}
         />
-
         <StatisticsCard
           iconColor="bg-rose-500"
-          title="Orders"
+          title="Commandes"
           value="$4,000"
           icon={Activity}
         />
         <StatisticsCard
           iconColor="bg-violet-500"
-          title="Customers"
+          title="Clients"
           value="500"
           icon={Users}
         />

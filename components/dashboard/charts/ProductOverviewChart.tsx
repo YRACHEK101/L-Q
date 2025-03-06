@@ -13,24 +13,24 @@ import {
 } from "recharts";
 
 const ProductOverviewChart = () => {
-  // Sample data for the charts
+  // Données d'exemple pour les graphiques
   const productData = [
-    { name: "Electronics", Sales: 3000 },
-    { name: "Clothing", Sales: 5000 },
-    { name: "Home Appliances", Sales: 4000 },
-    { name: "Books", Sales: 2000 },
+    { name: "Électronique", Ventes: 3000 },
+    { name: "Vêtements", Ventes: 5000 },
+    { name: "Électroménager", Ventes: 4000 },
+    { name: "Livres", Ventes: 2000 },
   ];
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
       <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-        Product Overview
+        Aperçu des Produits
       </h2>
 
-      {/* Product Sales Distribution Chart */}
+      {/* Graphique de Distribution des Ventes par Produit */}
       <div className="mb-6">
         <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
-          Product Sales Distribution
+          Distribution des Ventes par Produit
         </h3>
         <ResponsiveContainer width="100%" height={300}>
           <BarChart data={productData}>
@@ -38,21 +38,21 @@ const ProductOverviewChart = () => {
             <YAxis />
             <Tooltip />
             <Legend />
-            <Bar dataKey="Sales" fill="#34D399" />
+            <Bar dataKey="Ventes" fill="#34D399" />
           </BarChart>
         </ResponsiveContainer>
       </div>
 
-      {/* Top Selling Products Chart */}
+      {/* Graphique des Produits les Plus Vendus */}
       <div>
         <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
-          Top Selling Products
+          Produits les Plus Vendus
         </h3>
         <ResponsiveContainer width="100%" height={300}>
           <AreaChart data={productData}>
             <Area
               type="monotone"
-              dataKey="Sales"
+              dataKey="Ventes"
               stroke="#3182CE"
               fill="#3182CE"
             />

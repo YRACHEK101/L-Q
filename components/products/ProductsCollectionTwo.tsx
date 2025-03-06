@@ -5,7 +5,7 @@ import React from "react";
 import SingleProductCartView from "../product/SingleProductCartView";
 
 const ProductsCollectionTwo = () => {
-  //get products data from server here based on the category or tab value
+  //récupérer les données des produits du serveur ici selon la catégorie ou l'onglet
   const data = productsData;
 
   return (
@@ -13,13 +13,13 @@ const ProductsCollectionTwo = () => {
       <Tabs defaultValue="new-arrivals" className="w-full space-y-8 mx-0">
         <TabsList className="font-semibold bg-transparent w-full text-center">
           <TabsTrigger value="new-arrivals" className="md:text-xl">
-            New Arrivals
+            Nouveautés
           </TabsTrigger>
           <TabsTrigger value="best-sellers" className="md:text-xl">
-            Best Sellers
+            Meilleures Ventes
           </TabsTrigger>
           <TabsTrigger value="feauted" className="md:text-xl">
-            Featured
+            En Vedette
           </TabsTrigger>
         </TabsList>
         <TabsContent value="new-arrivals" className="w-full">

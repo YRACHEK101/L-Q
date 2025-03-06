@@ -43,7 +43,7 @@ const ProductQuickViewModal = () => {
           onClick={handleCloseModal}
         >
           <div className="absolute top-0 right-0 m-4 z-50">
-            {/* Close button */}
+            {/* Bouton fermer */}
             <Button
               variant={"outline"}
               className="p-2 text-white rounded-full bg-black/50 hover:bg-black/70"
@@ -55,39 +55,39 @@ const ProductQuickViewModal = () => {
           <div className="bg-white dark:bg-slate-800 p-4 lg:p-8 rounded-lg shadow-lg h-[95%] w-[90%] lg:w-[80%] lg:h-[90%] overflow-auto hide-scrollbar">
             {product && (
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                {/* Product Gallery */}
+                {/* Galerie de Produits */}
                 <ProductGallery isInModal={true} images={product.images} />
                 <div className="space-y-2">
-                  {/* Category */}
+                  {/* Catégorie */}
                   <small className="bg-lime-500 py-1 px-4 rounded-full w-fit">
                     {product.category}
                   </small>
-                  {/* Product Name */}
+                  {/* Nom du Produit */}
                   <h2 className="text-2xl md:text-3xl font-bold capitalize">
                     {product.name}
                   </h2>
-                  {/* Rating and Review */}
+                  {/* Note et Avis */}
                   <RatingReview
                     rating={product.rating || 0}
                     review={product.reviews.length || 0}
                   />
-                  {/* Product Description */}
+                  {/* Description du Produit */}
                   <ProductDescription description={product.description} />
 
-                  {/* product stock */}
+                  {/* stock du produit */}
                   <div className="">
                     {product.stockItems === 0 ? (
                       <p className="text-lg w-fit rounded-md">
-                        out of stock
+                        Rupture de stock
                       </p>
                     ) : (
                       <p className="text-lg w-fit rounded-md text-muted-foreground">
-                        Only {product.stockItems} items in stock
+                        Seulement {product.stockItems} articles en stock
                       </p>
                     )}
                   </div>
 
-                  {/* product colors */}
+                  {/* couleurs du produit */}
                   <ProductColorSelection
                     allColors={product.color!}
                     color={selectedColor}
@@ -96,13 +96,13 @@ const ProductQuickViewModal = () => {
 
                   <div className="flex items-center gap-6 !my-4">
                     <div className="">
-                      {/* Original Price */}
+                      {/* Prix Original */}
                       <p className="text-muted-foreground line-through">
-                        ${product.price}
+                        {product.price}€
                       </p>
-                      {/* Discounted Price */}
+                      {/* Prix Réduit */}
                       <p className="text-3xl font-bold text-green-500">
-                        ${calculateDiscount(product.price, product.discount)}
+                        {calculateDiscount(product.price, product.discount)}€
                       </p>
                     </div>
                     <ProductQuantityChange
@@ -114,11 +114,11 @@ const ProductQuickViewModal = () => {
                     className="flex flex-col md:flex-row items-center gap-2"
                     onClick={closeModal}
                   >
-                    {/* Add To Cart Button */}
+                    {/* Bouton Ajouter au Panier */}
                     <AddToCartBtn
                       product={{ ...product, quantity, selectedColor }}
                     />
-                    {/* Buy Now Button */}
+                    {/* Bouton Acheter Maintenant */}
                     <BuyNowBtn
                       product={{ ...product, quantity, selectedColor }}
                     />

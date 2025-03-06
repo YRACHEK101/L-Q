@@ -22,7 +22,7 @@ const TestimonialsSection = ({ textCenter }: { textCenter: boolean }) => {
               : "text-start border-l-4 border-l-rose-500"
           )}
         >
-          What Our Customers Say
+          Ce Que Disent Nos Clients
         </h2>
         <Carousel
           plugins={[
@@ -45,7 +45,7 @@ const TestimonialsSection = ({ textCenter }: { textCenter: boolean }) => {
                     <div className="flex items-center mb-4">
                       <Image
                         src={testi.image}
-                        alt="User"
+                        alt="Utilisateur"
                         width={48}
                         height={48}
                         className="w-12 h-12 rounded-full mr-4 object-cover"

@@ -19,28 +19,28 @@ const DropdownMenuComponent = () => {
         </DropdownMenuTrigger>
         <DropdownMenuContent className="p-6 space-y-2">
           <DropdownMenuItem>
-            <Link href={"/homepagetwo"}>Home Page Two</Link>
+            <Link href={"/homepagetwo"}>Page d'Accueil 2</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/shoppagetwo"}>Shop Page Two</Link>
+            <Link href={"/shoppagetwo"}>Page Boutique 2</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/blogpageone"}>Blog Page One</Link>
+            <Link href={"/blogpageone"}>Page Blog 1</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/blogpagetwo"}>Blog Page Two</Link>
+            <Link href={"/blogpagetwo"}>Page Blog 2</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/dashboard"}>Dashboard Page</Link>
+            <Link href={"/dashboard"}>Tableau de Bord</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/sign-up"}>Sign Up Page</Link>
+            <Link href={"/sign-up"}>Inscription</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/sign-in"}>Sign In Page</Link>
+            <Link href={"/sign-in"}>Connexion</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/forgot-password"}>Forgot Password Page</Link>
+            <Link href={"/forgot-password"}>Mot de Passe Oublié</Link>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>

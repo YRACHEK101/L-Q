@@ -27,7 +27,7 @@ const CategorySectionOne = () => {
           className=" p-4 rounded-lg shadow-md w-full flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 cursor-pointer"
         >
           <div className="relative w-[8rem] h-[8rem]">
-            <Image className="object-cover" src={category.image} fill alt={category.name} />
+            <Image className="object-cover" src={category.image} fill alt={`Catégorie ${category.name}`} />
           </div>
           <div className="text-center">
           <p className="text-xl font-semibold hover:underline">{category.name}</p>

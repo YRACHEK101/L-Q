@@ -7,16 +7,16 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-// Define the schema for form validation
+// Définir le schéma pour la validation du formulaire
 const productSchema = z.object({
-  name: z.string().min(1, "Name is required"),
-  price: z.string().min(1, "Price is required"),
-  category: z.string().min(1, "Category is required"),
-  brand: z.string().min(1, "Brand is required"),
+  name: z.string().min(1, "Le nom est requis"),
+  price: z.string().min(1, "Le prix est requis"),
+  category: z.string().min(1, "La catégorie est requise"),
+  brand: z.string().min(1, "La marque est requise"),
   type: z.enum(["featured", "top-rated", "most-popular", "new-arrivals"]),
-  description: z.string().min(1, "Description is required"),
+  description: z.string().min(1, "La description est requise"),
   aboutItem: z.string().optional(),
-  images: z.array(z.instanceof(File)).min(1, "At least one image is required"),
+  images: z.array(z.instanceof(File)).min(1, "Au moins une image est requise"),
   color: z.array(z.string()).optional(),
   discount: z.number().min(0).max(100).optional(),
 });
@@ -65,7 +65,7 @@ const ProductForm = () => {
   return (
     <div className="max-w-screen-xl mx-auto w-full bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 my-4">
       <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-        Add New Product
+        Ajouter un Nouveau Produit
       </h2>
       <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div>
@@ -73,7 +73,7 @@ const ProductForm = () => {
             htmlFor="name"
             className="block text-sm font-medium text-gray-700 dark:text-white"
           >
-            Product Name
+            Nom du Produit
           </Label>
           <Input
             id="name"
@@ -91,7 +91,7 @@ const ProductForm = () => {
             htmlFor="price"
             className="block text-sm font-medium text-gray-700 dark:text-white"
           >
-            Price
+            Prix
           </Label>
           <Input
             id="price"
@@ -106,10 +106,10 @@ const ProductForm = () => {
 
         <div>
           <Label
-            htmlFor="price"
+            htmlFor="discount"
             className="block text-sm font-medium text-gray-700 dark:text-white"
           >
-            discount
+            Réduction
           </Label>
           <Input
             id="price"
@@ -127,7 +127,7 @@ const ProductForm = () => {
             htmlFor="category"
             className="block text-sm font-medium text-gray-700 dark:text-white"
           >
-            Category
+            Catégorie
           </Label>
           <Input
             id="category"
@@ -145,7 +145,7 @@ const ProductForm = () => {
             htmlFor="brand"
             className="block text-sm font-medium text-gray-700 dark:text-white"
           >
-            Brand
+            Marque
           </Label>
           <Input
             id="brand"
@@ -163,17 +163,17 @@ const ProductForm = () => {
             htmlFor="type"
             className="block text-sm font-medium text-gray-700 dark:text-white"
           >
-            Product Type
+            Type de Produit
           </Label>
           <select
             id="type"
             className="mt-1 p-2 block w-full dark:bg-slate-950 rounded-md border-gray-300 dark:border-gray-600 focus:ring-blue-500 focus:border-blue-500"
             {...register("type")}
           >
-            <option value="featured">Featured</option>
-            <option value="top-rated">Top Rated</option>
-            <option value="most-popular">Most Popular</option>
-            <option value="new-arrivals">New Arrivals</option>
+            <option value="featured">Mis en Avant</option>
+            <option value="top-rated">Les Mieux Notés</option>
+            <option value="most-popular">Les Plus Populaires</option>
+            <option value="new-arrivals">Nouveautés</option>
           </select>
           {errors.type && (
             <span className="text-red-500">{errors.type.message}</span>
@@ -200,13 +200,13 @@ const ProductForm = () => {
 
         <div>
           <Label
-            htmlFor="description"
+            htmlFor="color"
             className="block text-sm font-medium text-gray-700 dark:text-white"
           >
-            Available Colors
+            Couleurs Disponibles
           </Label>
           <Input
-            id="description"
+            id="color"
             className="mt-1 p-2 block border dark:bg-slate-950 w-full rounded-md border-gray-300 dark:border-gray-600 focus:ring-blue-500 focus:border-blue-500"
             {...register("color")}
           />
@@ -220,7 +220,7 @@ const ProductForm = () => {
             htmlFor="aboutItem"
             className="block text-sm font-medium text-gray-700 dark:text-white"
           >
-            About Item
+            À Propos du Produit
           </Label>
           <textarea
             id="aboutItem"
@@ -237,10 +237,10 @@ const ProductForm = () => {
             htmlFor="images"
             className="block text-sm font-medium text-gray-700 dark:text-white"
           >
-            Product Images
+            Images du Produit
           </Label>
           <p className="text-gray-500">
-            You can upload multiple images for this product.
+            Vous pouvez télécharger plusieurs images pour ce produit.
           </p>
           <Input
             id="images"
@@ -254,12 +254,11 @@ const ProductForm = () => {
           )}
         </div>
         <div>
-          <Button type="submit">Submit</Button>
+          <Button type="submit">Envoyer</Button>
         </div>
       </form>
     </div>
   );
 };
-
 
 export default ProductForm;

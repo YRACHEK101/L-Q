@@ -101,18 +101,18 @@ const FilterProducts = () => {
   };
 
   return (
-    <aside className="w-72 p-2 space-y-4 ">
-      <h2 className="text-xl font-bold capitalize my-2">Filter Products</h2>
+    <aside className="w-72 p-2 space-y-4">
+      <h2 className="text-xl font-bold capitalize my-2">Filtrer les Produits</h2>
       <Separator />
-      {/* filter by price */}
+      {/* filtrer par prix */}
       <div>
-        <h3 className="text-lg font-medium my-2">By Price</h3>
+        <h3 className="text-lg font-medium my-2">Par Prix</h3>
         <div className="flex items-center justify-between gap-4">
           <div>
             <Label htmlFor="min">Min :</Label>
             <Input
               id="min"
-              placeholder="$10"
+              placeholder="10€"
               value={minValue}
               min={2}
               type="number"
@@ -123,7 +123,7 @@ const FilterProducts = () => {
             <Label htmlFor="max">Max :</Label>
             <Input
               id="max"
-              placeholder="$2000"
+              placeholder="2000€"
               min={2}
               value={maxValue}
               type="number"
@@ -139,13 +139,13 @@ const FilterProducts = () => {
             max={5000}
             value={maxValue}
           />
-          <p className="text-center text-green-500 text-2xl">${maxValue}</p>
+          <p className="text-center text-green-500 text-2xl">{maxValue}€</p>
         </div>
       </div>
 
-      {/* filter by category */}
+      {/* filtrer par catégorie */}
       <div>
-        <h3 className="text-lg font-medium my-2">By Categories</h3>
+        <h3 className="text-lg font-medium my-2">Par Catégories</h3>
         <div className="flex items-center justify-start gap-2 flex-wrap">
           {dummyCategories.map((category) => (
             <p
@@ -163,9 +163,9 @@ const FilterProducts = () => {
         </div>
       </div>
 
-      {/* filter by Colors */}
+      {/* filtrer par couleurs */}
       <div>
-        <h3 className="text-lg font-medium my-2">By Colors</h3>
+        <h3 className="text-lg font-medium my-2">Par Couleurs</h3>
         <div className="flex items-center justify-start gap-2 flex-wrap">
           {colors.map((color) => (
             <p
@@ -186,9 +186,9 @@ const FilterProducts = () => {
         </div>
       </div>
 
-      {/* filter by Brand name */}
+      {/* filtrer par marque */}
       <div>
-        <h3 className="text-lg font-medium my-2">By Brands</h3>
+        <h3 className="text-lg font-medium my-2">Par Marques</h3>
         <div className="flex items-center justify-start gap-2 flex-wrap">
           {brandsData.map((brand) => (
             <p
@@ -206,7 +206,7 @@ const FilterProducts = () => {
       </div>
       <div>
         <Button onClick={clearFilter} variant={"outline"} className="w-full">
-          Clear Filter
+          Effacer les filtres
         </Button>
       </div>
     </aside>

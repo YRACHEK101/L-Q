@@ -12,11 +12,10 @@ const NewsLetter = () => {
           <Plane size={100} className="text-rose-500 animate-bounce" />
           <div className="flex flex-col items-center gap-2 p-4">
             <h2 className="text-2xl md:text-5xl font-bold capitalize flex items-center mt-2 text-center gap-2">
-              Subscribe to our newsletter
+              Abonnez-vous à notre newsletter
             </h2>
             <p className="text-center">
-              To get latest products update and recommendation subscribe our
-              newsletter.
+              Pour recevoir les dernières mises à jour des produits et nos recommandations.
             </p>
             <form
               action=""
@@ -24,13 +23,13 @@ const NewsLetter = () => {
             >
               <Input
                 className="rounded-full w-full  md:w-[50%] bg-transparent border-none flex-1 outline-none focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
-                placeholder="Enter Your Email"
+                placeholder="Entrez votre email"
               />
               <Button
                 type="submit"
                 className="bg-gradient-to-r from-orange-500 to-rose-500 text-xl p-8 rounded-full hover:opacity-50 duration-200"
               >
-                Subscribe
+                S&apos;abonner
               </Button>
             </form>
           </div>

@@ -7,11 +7,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-// Define the schema for form validation
+// Définir le schéma pour la validation du formulaire
 const formSchema = z.object({
-  name: z.string().min(1, "Category name is required"),
-  image: z.string().url({ message: "Invalid URL format" }),
-  description: z.string().min(1, "Description is required"),
+  name: z.string().min(1, "Le nom de la catégorie est requis"),
+  image: z.string().url({ message: "Format d'URL invalide" }),
+  description: z.string().min(1, "La description est requise"),
 });
 
 // Define TypeScript types for form data
@@ -35,7 +35,7 @@ const CategoryForm: React.FC = () => {
   return (
     <div className="max-w-screen-xl w-full mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 my-4">
       <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-        Add Category
+        Ajouter une Catégorie
       </h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div className="space-y-2">
@@ -43,7 +43,7 @@ const CategoryForm: React.FC = () => {
             htmlFor="name"
             className="block text-sm font-medium text-gray-700 dark:text-white"
           >
-            Category Name
+            Nom de la Catégorie
           </Label>
           <Input
             type="text"
@@ -62,7 +62,7 @@ const CategoryForm: React.FC = () => {
             htmlFor="image"
             className="block text-sm font-medium text-gray-700 dark:text-white"
           >
-            Image Upload
+            Télécharger l'Image
           </Label>
           <Input
             type="file"
@@ -98,7 +98,7 @@ const CategoryForm: React.FC = () => {
           type="submit"
           className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg"
         >
-          Add Category
+          Ajouter la Catégorie
         </Button>
       </form>
     </div>

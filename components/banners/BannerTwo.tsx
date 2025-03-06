@@ -3,9 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const BannerTwo = () => {
-
-
-  // get latest banner data from server and show here
+  // récupérer les dernières données de la bannière du serveur et les afficher ici
 
   return (
     <section className="bg-gradient-to-b bg-gray-600 to-gray-200 dark:bg-gray-900 ">
@@ -15,14 +13,14 @@ const BannerTwo = () => {
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
                 <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
-                  <span className="block xl:inline">Shop the latest</span>{" "}
+                  <span className="block xl:inline">Découvrez les</span>{" "}
                   <span className="block text-blue-500 dark:text-blue-600 xl:inline">
-                    tech gadgets
+                    gadgets technologiques
                   </span>
                 </h1>
                 <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  From smartphones to smart home devices, find everything you
-                  need right here.
+                  Des smartphones aux objets connectés, trouvez tout ce dont
+                  vous avez besoin ici.
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
@@ -30,7 +28,7 @@ const BannerTwo = () => {
                       href="/shop"
                       className="w-full flex items-center justify-center px-12 py-3 border border-transparent text-base font-medium rounded-full text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
                     >
-                      Shop Now
+                      Acheter Maintenant
                     </Link>
                   </div>
                 </div>

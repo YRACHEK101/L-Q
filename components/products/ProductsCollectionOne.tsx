@@ -24,17 +24,17 @@ const ProductsCollectionOne = () => {
       <Tabs defaultValue="top-rated" className="w-full space-y-8 mx-0">
         <div className="flex items-center flex-col md:flex-row justify-between gap-2 flex-wrap w-full">
           <h2 className="text-3xl md:text-5xl font-semibold border-l-4 border-l-rose-500 p-2">
-            Featured Products
+            Produits en Vedette
           </h2>
           <TabsList className="font-semibold bg-transparent text-center">
             <TabsTrigger value="top-rated" className="md:text-xl">
-              Top Rated
+              Les Mieux Notés
             </TabsTrigger>
             <TabsTrigger value="most-popular" className="md:text-xl">
-              Most Popular
+              Les Plus Populaires
             </TabsTrigger>
             <TabsTrigger value="new-items" className="md:text-xl">
-              New Items
+              Nouveautés
             </TabsTrigger>
           </TabsList>
         </div>

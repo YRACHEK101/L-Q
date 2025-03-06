@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
 import { colors } from "@/data/products/productColor";
@@ -17,7 +16,7 @@ const ProductColorSelection = ({
 }: ProductColorSelectionProps) => {
   return (
     <div>
-      <p className="text-lg  mb-1">Colors</p>
+      <p className="text-lg mb-1">Couleurs</p>
       <div className="space-x-2">
         <TooltipProvider delayDuration={0}>
           {allColors?.map((color) => (

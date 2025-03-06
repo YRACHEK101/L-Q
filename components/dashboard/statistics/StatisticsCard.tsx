@@ -1,14 +1,14 @@
 interface StatisticsCardProps {
-  title: string;
-  value: string;
+  titre: string;    // renamed from 'title'
+  valeur: string;   // renamed from 'value'
   icon: any;
   color?: string;
   iconColor: string;
 }
 
 const StatisticsCard = ({
-  title,
-  value,
+  titre,            // updated prop name
+  valeur,          // updated prop name
   icon: Icon,
   iconColor,
   color,
@@ -30,8 +30,8 @@ const StatisticsCard = ({
           <Icon size={25} />
         </div>
         <div className="ml-4">
-          <p className="text-xl font-bold">{value}</p>
-          <p className="text-lg font-semibold">{title}</p>
+          <p className="text-xl font-bold">{valeur}</p>
+          <p className="text-lg font-semibold">{titre}</p>
         </div>
       </div>
     </div>

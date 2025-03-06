@@ -6,7 +6,7 @@ const AboutMe = () => {
     <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md">
       <div className="p-6">
         <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-          About Me
+          À Propos de Moi
         </h2>
         <div>
           <p className="text-gray-700 dark:text-gray-300 mb-4 ">
@@ -15,7 +15,7 @@ const AboutMe = () => {
           <div className="flex items-center mb-4">
             <Image
               src= '/images/people/person.jpg'
-              alt="User"
+              alt="Utilisateur"
               width={48}
               height={48}
               className="w-12 h-12 rounded-full mr-4 object-cover"
@@ -25,7 +25,7 @@ const AboutMe = () => {
                Shohag Miah
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
-                CEO, Company Inc.
+                PDG, Company Inc.
               </p>
             </div>
           </div>

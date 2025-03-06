@@ -7,13 +7,13 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-// Define the schema for form validation
+// Définir le schéma pour la validation du formulaire
 const formSchema = z.object({
-  title: z.string().min(1, "Title is required"),
-  description: z.string().min(1, "Description is required"),
-  buttonText: z.string().min(1, "Button text is required"),
-  buttonLink: z.string().url({ message: "Invalid URL format" }),
-  image:z.instanceof(File)
+  title: z.string().min(1, "Le titre est requis"),
+  description: z.string().min(1, "La description est requise"),
+  buttonText: z.string().min(1, "Le texte du bouton est requis"),
+  buttonLink: z.string().url({ message: "Format d'URL invalide" }),
+  image: z.instanceof(File)
 });
 
 // Define TypeScript types for form data
@@ -37,12 +37,12 @@ const BannerForm: React.FC = () => {
   return (
     <div className="max-w-screen-xl w-full mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 my-4">
       <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-        Add Banner
+        Ajouter une Bannière
       </h2>
       <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="space-y-2">
           <Label htmlFor="title" className="block text-sm font-medium text-gray-700 dark:text-white">
-            Title
+            Titre
           </Label>
           <Input
             type="text"
@@ -70,7 +70,7 @@ const BannerForm: React.FC = () => {
         </div>
         <div className="space-y-2">
           <Label htmlFor="buttonText" className="block text-sm font-medium text-gray-700 dark:text-white">
-            Button Text
+            Texte du Bouton
           </Label>
           <Input
             type="text"
@@ -84,7 +84,7 @@ const BannerForm: React.FC = () => {
         </div>
         <div className="space-y-2">
           <Label htmlFor="buttonLink" className="block text-sm font-medium text-gray-700 dark:text-white">
-            Button Link
+            Lien du Bouton
           </Label>
           <Input
             type="text"
@@ -98,7 +98,7 @@ const BannerForm: React.FC = () => {
         </div>
         <div className="space-y-2">
           <Label htmlFor="image" className="block text-sm font-medium text-gray-700 dark:text-white">
-            Upload Image
+            Télécharger l'Image
           </Label>
           <Input
             type="file"
@@ -115,7 +115,7 @@ const BannerForm: React.FC = () => {
           type="submit"
           className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg  w-fit"
         >
-          Add Banner
+          Ajouter la Bannière
         </Button>
        </div>
       </form>

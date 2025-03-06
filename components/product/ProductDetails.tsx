@@ -18,36 +18,38 @@ const ProductDetails = ({ product }: { product: Product }) => {
 
   return (
     <div className="space-y-2 mt-2">
-      {/* Category */}
+      {/* Catégorie */}
       <Link
         href={`/shop?category=${product.category}`}
         className="bg-lime-500 py-1 px-4 rounded-full w-fit"
       >
         {product?.category}
       </Link>
-      {/* Product Name */}
+      {/* Nom du Produit */}
       <h2 className="text-2xl md:text-3xl font-bold capitalize">
         {product?.name}
       </h2>
-      {/* Rating and Review */}
+      {/* Notes et Avis */}
       <RatingReview
         rating={product?.rating || 0}
         review={product?.reviews.length || 0}
       />
-      {/* Product Description */}
+      {/* Description du Produit */}
       <ProductDescription description={product?.description as string} />
 
-      {/* product stock */}
+      {/* Stock du produit */}
       <div>
         {product.stockItems === 0 ? (
-          <p className="text-lg  w-fit rounded-md text-muted-foreground">out of stock</p>
+          <p className="text-lg w-fit rounded-md text-muted-foreground">
+            Rupture de stock
+          </p>
         ) : (
           <p className="text-lg w-fit rounded-md text-muted-foreground">
-            Only <span className="text-lg text-black dark:text-white">({product.stockItems})</span> items in stock
+            Seulement <span className="text-lg text-black dark:text-white">({product.stockItems})</span> articles en stock
           </p>
         )}
       </div>
-      {/* product colors */}
+      {/* Couleurs du produit */}
       <ProductColorSelection
         color={selectedColor}
         setColor={setSelectedColor}
@@ -56,14 +58,14 @@ const ProductDetails = ({ product }: { product: Product }) => {
 
       <div className="flex items-center gap-6">
         <div className="">
-          {/* Original Price */}
+          {/* Prix Original */}
           <p className="text-muted-foreground line-through text-2xl">
-            ${product?.price}
+            {product?.price}€
           </p>
           <div className="flex items-center gap-4">
-            {/* Discounted Price */}
+            {/* Prix Réduit */}
             <p className="text-3xl font-bold text-green-500 border-green-500 border py-2 px-6 rounded-lg">
-              ${calculateDiscount(product.price, product.discount)}
+              {calculateDiscount(product.price, product.discount)}€
             </p>
             <ProductQuantityChange
               quantity={quantity}
@@ -73,14 +75,14 @@ const ProductDetails = ({ product }: { product: Product }) => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row items-center gap-4 !my-6">
-        {/* Add To Cart Button */}
+        {/* Bouton Ajouter au Panier */}
         <AddToCartBtn product={{ ...product, quantity, selectedColor }} />
-        {/* Buy Now Button */}
+        {/* Bouton Acheter Maintenant */}
         <BuyNowBtn product={{ ...product, quantity, selectedColor }} />
       </div>
-      {/* Separator */}
+      {/* Séparateur */}
       <Separator className="!mt-4" />
-      {/* Product Tab */}
+      {/* Onglets Produit */}
       <ProductTab aboutItem={product?.aboutItem!} reviews={product?.reviews} />
     </div>
   );

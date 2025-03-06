@@ -7,14 +7,14 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 
-// Define the schema for form validation
+// Définir le schéma pour la validation du formulaire
 const formSchema = z.object({
-  title: z.string().min(1, "Title is required"),
-  author: z.string().min(1, "Author is required"),
-  date: z.string().min(1, "Date is required"),
-  imageUrl: z.string().url({ message: "Invalid URL format" }),
-  excerpt: z.string().min(1, "Excerpt is required"),
-  content: z.string().min(1, "Content is required"),
+  title: z.string().min(1, "Le titre est requis"),
+  author: z.string().min(1, "L'auteur est requis"),
+  date: z.string().min(1, "La date est requise"),
+  imageUrl: z.string().url({ message: "Format d'URL invalide" }),
+  excerpt: z.string().min(1, "L'extrait est requis"),
+  content: z.string().min(1, "Le contenu est requis"),
 });
 
 // Define TypeScript types for form data
@@ -38,12 +38,12 @@ const AddBlogForm: React.FC = () => {
   return (
     <div className="max-w-screen-xl w-full mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 my-4">
       <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-        Add Blog
+        Ajouter un Article
       </h2>
       <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="space-y-2">
           <Label htmlFor="title" className="block text-sm font-medium text-gray-700 dark:text-white">
-            Title
+            Titre
           </Label>
           <Input
             type="text"
@@ -57,7 +57,7 @@ const AddBlogForm: React.FC = () => {
         </div>
         <div className="space-y-2">
           <Label htmlFor="author" className="block text-sm font-medium text-gray-700 dark:text-white">
-            Author
+            Auteur
           </Label>
           <Input
             type="text"
@@ -85,7 +85,7 @@ const AddBlogForm: React.FC = () => {
         </div>
         <div className="space-y-2">
           <Label htmlFor="imageUrl" className="block text-sm font-medium text-gray-700 dark:text-white">
-            Image URL
+            URL de l'Image
           </Label>
           <Input
             type="text"
@@ -99,7 +99,7 @@ const AddBlogForm: React.FC = () => {
         </div>
         <div className="space-y-2">
           <Label htmlFor="excerpt" className="block text-sm font-medium text-gray-700 dark:text-white">
-            Excerpt
+            Extrait
           </Label>
           <textarea
             id="excerpt"
@@ -112,7 +112,7 @@ const AddBlogForm: React.FC = () => {
         </div>
         <div className="space-y-2">
           <Label htmlFor="content" className="block text-sm font-medium text-gray-700 dark:text-white">
-            Content
+            Contenu
           </Label>
           <textarea
             id="content"
@@ -128,7 +128,7 @@ const AddBlogForm: React.FC = () => {
           type="submit"
           className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg"
         >
-          Add Blog
+          Ajouter l'Article
         </Button>
         </div>
       </form>

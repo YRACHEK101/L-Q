@@ -46,7 +46,7 @@ const Pagination = ({ pageName, totalPages, currentPage }: PaginationProps) => {
         onClick={() => handleChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
-        Previous
+        Précédent
       </button>
       {buttons}
       <button
@@ -54,7 +54,7 @@ const Pagination = ({ pageName, totalPages, currentPage }: PaginationProps) => {
         onClick={() => handleChange(currentPage + 1)}
         disabled={currentPage === totalPages}
       >
-        Next
+        Suivant
       </button>
     </div>
   );

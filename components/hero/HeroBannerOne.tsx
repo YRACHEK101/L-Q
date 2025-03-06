@@ -17,7 +17,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const HeroBannerOne = () => {
-  // get banners data from server then display here
+  // récupérer les données des bannières du serveur puis les afficher ici
 
   return (
     <section className="bg-gradient-to-r from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 ">
@@ -70,16 +70,16 @@ const HeroBannerOne = () => {
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                  {/* main product image */}
+                  {/* image principale du produit */}
                   <Image
                     className="bg-transparent rotate-6 relative z-50 object-contain"
                     src={data.images[0]}
                     width={500}
                     height={500}
-                    alt="banner image"
+                    alt="image de bannière"
                   />
                 </motion.div>
-                {/* Animated Sparkles */}
+                {/* Éléments animés scintillants */}
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}

@@ -46,11 +46,11 @@ const SingleProductCartView = ({ product }: { product: Product }) => {
           <Image className="object-contain" src={images[0]} alt={name} fill />
           {stockItems === 0 ? (
             <p className="py-1 px-4 text-sm font-bold rounded-sm bg-rose-500 text-white absolute top-2 right-2">
-              out of stock
+              rupture de stock
             </p>
           ) : (
             <p className="py-1 px-4 text-sm font-bold rounded-sm bg-rose-500 text-white absolute top-2 right-2">
-              {product.discount}% off
+              {product.discount}% de réduction
             </p>
           )}
         </div>
@@ -64,9 +64,8 @@ const SingleProductCartView = ({ product }: { product: Product }) => {
             e.preventDefault();
             router.push(`shop?category=${category}`);
           }}
-          className="text-sm text-sky-500 font-light -mb-1 hover:opacity-60 "
+          className="text-sm text-sky-500 font-light -mb-1 hover:opacity-60"
         >
-          {" "}
           {category}
         </p>
         <h3 className="text-xl font-fold capitalize hover:text-green-500">
@@ -74,10 +73,10 @@ const SingleProductCartView = ({ product }: { product: Product }) => {
           {name.length > 45 && "..."}
         </h3>
         <RatingReview rating={rating} review={reviews.length} />
-        <div className="text-lg font-bold space-x-3 ">
-          <span className="line-through text-muted-foreground">${price}</span>
+        <div className="text-lg font-bold space-x-3">
+          <span className="line-through text-muted-foreground">{price}€</span>
           <span className="text-xl font-bold text-green-500">
-            ${discountedPrice.toFixed(2)}
+            {discountedPrice.toFixed(2)}€
           </span>
         </div>
       </div>

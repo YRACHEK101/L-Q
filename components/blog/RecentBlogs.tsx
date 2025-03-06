@@ -7,7 +7,7 @@ import { blogPosts } from '@/data/blog/blogData'
 const RecentBlogs = () => {
   return (
       <aside className="col-span-2">
-        <h2 className="text-3xl font-semibold capitalize mb-2">Recent Blogs</h2>
+        <h2 className="text-3xl font-semibold capitalize mb-2">Articles Récents</h2>
         <div className="space-y-4">
           {blogPosts.map((blog) => (
             <Link
@@ -17,7 +17,7 @@ const RecentBlogs = () => {
             >
               <Image
                 src={blog.image || ""}
-                alt="blog iamge"
+                alt="image du blog"
                 width={70}
                 height={70}
                 className="rounded-md object-contain"
@@ -27,7 +27,7 @@ const RecentBlogs = () => {
                 <div className="text-sm font-normal flex items-center gap-2 mt-2 text-blue-500">
                   <Avatar>
                     <AvatarImage src="https://github.com/shadcn.png" />
-                    <AvatarFallback>Pic</AvatarFallback>
+                    <AvatarFallback>Photo</AvatarFallback>
                   </Avatar>{" "}
                   {blog.author}
                 </div>

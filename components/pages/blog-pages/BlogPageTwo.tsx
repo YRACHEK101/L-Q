@@ -7,12 +7,12 @@ import Link from "next/link";
 import React from "react";
 
 const BlogPageTwo = () => {
-  // Sample tags data
-  const tags = ["Tech", "Gadgets", "Design", "Fashion", "Travel"];
+  // Exemple de tags
+  const tags = ["Technologie", "Gadgets", "Design", "Mode", "Voyage"];
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-      {/* Blogs Section */}
+      {/* Section Blogs */}
       <div className="grid grid-cols-1 gap-8">
         {blogPosts.map((post) => (
           <div
@@ -32,7 +32,7 @@ const BlogPageTwo = () => {
                 {post.title}
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm mb-2">
-                By {post.author} | {post.date?.toDateString()}
+                Par {post.author} | {post.date?.toDateString()}
               </p>
               <p className="text-gray-700 dark:text-gray-400">{post.excerpt}</p>
               <div className="flex items-center justify-between mt-4">
@@ -40,7 +40,7 @@ const BlogPageTwo = () => {
                   href={`/blog/${post.title}`}
                   className="text-blue-600 dark:text-blue-400 hover:underline"
                 >
-                  Read More
+                  Lire la suite
                 </Link>
               </div>
             </div>
@@ -48,17 +48,17 @@ const BlogPageTwo = () => {
         ))}
       </div>
 
-      {/* Sidebar Section */}
+      {/* Section Barre Latérale */}
       <div className="grid grid-cols-1 gap-8 h-fit">
-        {/* Popular Posts */}
+        {/* Articles Populaires */}
         <PopularPosts />
-        {/* About Me or Author Information */}
+        {/* À Propos de Moi */}
         <AboutMe />
-        {/* Categories */}
+        {/* Catégories */}
         <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md">
           <div className="p-6">
             <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-              Categories
+              Catégories
             </h2>
             <ul className="space-y-2">
               {dummyCategories.map((category) => (
@@ -73,11 +73,11 @@ const BlogPageTwo = () => {
           </div>
         </div>
 
-        {/* Tags */}
+        {/* Mots-clés */}
         <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md">
           <div className="p-6">
             <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-              Tags
+              Mots-clés
             </h2>
             <div className="flex flex-wrap gap-2">
               {tags.map((tag) => (

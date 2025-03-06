@@ -20,12 +20,12 @@ const HeaderOne = () => {
 
   const links = [
     {
-      label: "Home",
+      label: "Accueil",
       link: "/",
       isActive: pathname === "/",
     },
     {
-      label: "Shop",
+      label: "Boutique",
       link: "/shop",
       isActive: pathname.startsWith("/shop"),
     }
@@ -53,13 +53,13 @@ const HeaderOne = () => {
           <DropdownMenuComponent />
         </ul>
         <div className="flex items-center gap-6 ">
-          {/* mobile search option */}
+          {/* option de recherche mobile */}
           <div className="lg:hidden text-center">
             <Search size={25} onClick={openModal} />
           </div>
-          {/* desktop search */}
+          {/* recherche bureau */}
           <div className="hidden lg:block">
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense fallback={<p>Chargement...</p>}>
               <SearchBox />
             </Suspense>
           </div>

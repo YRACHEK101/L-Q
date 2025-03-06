@@ -25,18 +25,18 @@ const ProductViewChange = ({
   currentPage,
 }: ProductViewChangeProps) => {
   return (
-    <div className="max-w-screen-xl mx-auto py-4  md:-mb-4 flex flex-wrap items-center gap-2 md:gap-4 px-4 lg:px-0 ">
+    <div className="max-w-screen-xl mx-auto py-4 md:-mb-4 flex flex-wrap items-center gap-2 md:gap-4 px-4 lg:px-0">
       <div className="mr-auto">
-        {/* showing total shown result on the page */}
-        <p className=" text-base md:text-lg  font-medium capitalize text-muted-foreground  select-none">
-          {`showing ${((currentPage - 1) * itemPerPage) + 1}-${
+        {/* affichage du nombre total de résultats sur la page */}
+        <p className="text-base md:text-lg font-medium capitalize text-muted-foreground select-none">
+          {`Affichage de ${((currentPage - 1) * itemPerPage) + 1}-${
             itemPerPage * currentPage
-          } of ${totalPages * itemPerPage}`}{" "}
-          results
+          } sur ${totalPages * itemPerPage}`}{" "}
+          résultats
         </p>
       </div>
       
-      {/* this product list and cart view functionality is hidden on mobile screen */}
+      {/* cette fonctionnalité de vue en liste et en grille est cachée sur mobile */}
       <div className="hidden lg:flex items-center gap-4">
         <TooltipProvider delayDuration={0}>
           <Tooltip>
@@ -52,7 +52,7 @@ const ProductViewChange = ({
               </div>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Grid View</p>
+              <p>Vue en grille</p>
             </TooltipContent>
           </Tooltip>
           <Tooltip>
@@ -68,7 +68,7 @@ const ProductViewChange = ({
               </div>
             </TooltipTrigger>
             <TooltipContent>
-              <p>List View</p>
+              <p>Vue en liste</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>

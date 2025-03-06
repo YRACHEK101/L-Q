@@ -8,16 +8,16 @@ import React from "react";
 const ContactPageOne = () => {
   return (
     <section className="max-w-screen-xl mx-auto p-2 md:p-8">
-      <h2 className="text-4xl my-2 font-bold text-center">Get In Touch</h2>
+      <h2 className="text-4xl my-2 font-bold text-center">Contactez-Nous</h2>
       <div className="flex flex-col md:flex-row  md:max-h-[50rem] gap-4 overflow-hidden  dark:bg-slate-900 rounded-md shadow">
         
-        {/* contact form */}
+        {/* formulaire de contact */}
         <div className="w-full flex-1">
         <ContactForm />
         </div>
-        {/* contect us information */}
+        {/* informations de contact */}
         <div className=" bg-blue-600 w-full md:w-fit md:min-h-screen p-2 lg:p-8">
-          <h3 className="text-xl font-semibold text-center mt-4">Contact Us</h3>
+          <h3 className="text-xl font-semibold text-center mt-4">Nos Coordonnées</h3>
           <div className="flex items-center md:items-start w-full h-full justify-start mt-4 flex-col gap-6 md:text-xl">
             <div className="flex items-center gap-4">
               <Locate size={40} />
@@ -29,7 +29,7 @@ const ContactPageOne = () => {
             </div>
             <div className="flex gap-4 items-center">
               <Mail size={40} />
-              www.example@gmail.com{" "}
+              www.exemple@gmail.com
             </div>
           </div>
         </div>

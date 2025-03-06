@@ -6,22 +6,21 @@ import { Separator } from "@/components/ui/separator";
 import React from "react";
 
 const CartPageOne = () => {
-
   return (
-    <section className="p-4 md:p-8  bg-white dark:bg-gray-800">
+    <section className="p-4 md:p-8 bg-white dark:bg-gray-800">
       <div className="max-w-screen-xl mx-auto">
         <div className="space-y-3">
           <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
-            Shopping Cart
+            Panier d'Achats
           </h1>
-          <BreadcrumbComponent links={["/cart"]} pageText="Shopping Cart" />
+          <BreadcrumbComponent links={["/cart"]} pageText="Panier d'Achats" />
           <Separator className="dark:bg-white" />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
-          {/* Cart Items */}
+          {/* Articles du Panier */}
           <CartItemsDetails />
 
-          {/* Order Summary */}
+          {/* Résumé de la Commande */}
           <OrderSummaryForCart />
         </div>
       </div>

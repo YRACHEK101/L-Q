@@ -7,7 +7,7 @@ import RecentBlogs from "../../blog/RecentBlogs";
 
 const BlogPageOne = () => {
   return (
-    <div className="max-w-screen-xl mx-auto p-4 md:p-8 grid gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-5 ">
+    <div className="max-w-screen-xl mx-auto p-4 md:p-8 grid gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
       <div className="col-span-3 space-y-4">
         {blogPosts.map((blog) => (
           <div
@@ -18,7 +18,7 @@ const BlogPageOne = () => {
               <Image
                 className="rounded-md object-contain"
                 src={blog.image || ""}
-                alt="blog image"
+                alt="image du blog"
                 fill
               />
             </div>
@@ -30,16 +30,18 @@ const BlogPageOne = () => {
                 {blog.title}
               </h2>
               <div className="text-sm md:text-lg font-medium flex items-center gap-2 text-blue-500">
-                <span className="hidden md:block">Written By</span>
+                <span className="hidden md:block">Écrit par</span>
                 <Avatar>
                   <AvatarImage src="https://github.com/shadcn.png" />
-                  <AvatarFallback>Pic</AvatarFallback>
+                  <AvatarFallback>Photo</AvatarFallback>
                 </Avatar>{" "}
                 {blog.author}
               </div>
             </div>
             <p>{blog.excerpt}</p>
-            <Link href={`/blog/${blog.title}`} className="text-gray-900 dark:text-gray-100 underline text-muted-foreground my-2">Read More</Link>
+            <Link href={`/blog/${blog.title}`} className="text-gray-900 dark:text-gray-100 underline text-muted-foreground my-2">
+              Lire la suite
+            </Link>
           </div>
         ))}
       </div>

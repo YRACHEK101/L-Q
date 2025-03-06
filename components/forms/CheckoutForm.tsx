@@ -7,15 +7,15 @@ import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 
-// Defined Zod schema for form validation
+// Schéma de validation du formulaire
 const schema = z.object({
-  firstName: z.string().min(3, "First Name is required"),
-  lastName: z.string().min(3, "Last Name is required"),
-  address: z.string().min(5, "Address is required"),
-  phone: z.string().min(8, "Phone is required"),
-  city: z.string().min(3, "City is required"),
-  zip: z.string().min(5, "ZIP Code is required"),
-  country: z.string().min(2, "Country is required"),
+  firstName: z.string().min(3, "Le prénom est requis"),
+  lastName: z.string().min(3, "Le nom est requis"),
+  address: z.string().min(5, "L'adresse est requise"),
+  phone: z.string().min(8, "Le numéro de téléphone est requis"),
+  city: z.string().min(3, "La ville est requise"),
+  zip: z.string().min(5, "Le code postal est requis"),
+  country: z.string().min(2, "Le pays est requis"),
 });
 
 // Defined types for form data
@@ -41,7 +41,7 @@ const CheckoutForm: React.FC = () => {
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div>
-            <Label htmlFor="firstName">First Name</Label>
+            <Label htmlFor="firstName">Prénom</Label>
             <Input
               id="firstName"
               {...register("firstName")}
@@ -52,7 +52,7 @@ const CheckoutForm: React.FC = () => {
             )}
           </div>
           <div>
-            <Label htmlFor="lastName">Last Name</Label>
+            <Label htmlFor="lastName">Nom</Label>
             <Input
               id="lastName"
               {...register("lastName")}
@@ -64,7 +64,7 @@ const CheckoutForm: React.FC = () => {
           </div>
         </div>
         <div>
-          <Label htmlFor="address">Address</Label>
+          <Label htmlFor="address">Adresse</Label>
           <Input
             id="address"
             {...register("address")}
@@ -76,7 +76,7 @@ const CheckoutForm: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div>
-            <Label htmlFor="phone">Phone</Label>
+            <Label htmlFor="phone">Téléphone</Label>
             <Input
               type="tel"
               id="phone"
@@ -88,7 +88,7 @@ const CheckoutForm: React.FC = () => {
             )}
           </div>
           <div>
-            <Label htmlFor="city">City</Label>
+            <Label htmlFor="city">Ville</Label>
             <Input
               id="city"
               {...register("city")}
@@ -101,7 +101,7 @@ const CheckoutForm: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div>
-            <Label htmlFor="zip">ZIP Code</Label>
+            <Label htmlFor="zip">Code Postal</Label>
             <Input
               id="zip"
               {...register("zip")}
@@ -112,7 +112,7 @@ const CheckoutForm: React.FC = () => {
             )}
           </div>
           <div>
-            <Label htmlFor="country">Country</Label>
+            <Label htmlFor="country">Pays</Label>
             <Input
               id="country"
               {...register("country")}
@@ -124,7 +124,7 @@ const CheckoutForm: React.FC = () => {
           </div>
         </div>
         <div className="flex items-center justify-end">
-          <Button type="submit">Save</Button>
+          <Button type="submit">Enregistrer</Button>
         </div>
       </form>
     </div>

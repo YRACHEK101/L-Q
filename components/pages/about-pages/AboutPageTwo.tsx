@@ -5,10 +5,10 @@ const AboutPageTwo = () => {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-        {/* Left Column: Introduction */}
+        {/* Colonne Gauche: Introduction */}
         <div>
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-            Our Story
+            Notre Histoire
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
@@ -22,63 +22,61 @@ const AboutPageTwo = () => {
           </p>
         </div>
 
-        {/* Right Column: Team */}
+        {/* Colonne Droite: Équipe */}
         <div>
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-            Our Team
+            Notre Équipe
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {/* Team Member Card */}
+            {/* Carte Membre de l'Équipe */}
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
               <div className="relative w-full h-[16rem]">
                 <Image
                   src="/images/people/group-image.avif"
-                  alt="Team Member 1"
+                  alt="Membre d'Équipe 1"
                   className="w-full h-64 object-cover"
                   fill
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  John Doe
+                  Jean Dupont
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300">
-                  Co-Founder & CEO
+                  Co-Fondateur & PDG
                 </p>
               </div>
             </div>
 
-            {/* Team Member Card */}
+            {/* Carte Membre de l'Équipe */}
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
               <div className="relative w-full h-[16rem]">
                 <Image
                   src="/images/people/group-image.avif"
-                  alt="Team Member 1"
+                  alt="Membre d'Équipe 2"
                   className="w-full h-64 object-cover"
                   fill
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  Jane Smith
+                  Marie Martin
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300">
-                  Co-Founder & CTO
+                  Co-Fondatrice & Directrice Technique
                 </p>
               </div>
             </div>
-
-            {/* Add more team member cards as needed */}
           </div>
         </div>
       </div>
 
-      {/* Additional Sections */}
+      {/* Sections Supplémentaires */}
       <div className="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Mission */}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
           <div className="p-6">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Mission</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Notre Mission</h2>
             <p className="text-gray-700 dark:text-gray-300">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
               ipsum id neque laoreet tincidunt. Suspendisse potenti. Curabitur
@@ -87,10 +85,10 @@ const AboutPageTwo = () => {
           </div>
         </div>
 
-        {/* Values */}
+        {/* Valeurs */}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
           <div className="p-6">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Values</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Nos Valeurs</h2>
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
               <li>Lorem ipsum dolor sit amet</li>
               <li>Consectetur adipiscing elit</li>
@@ -104,7 +102,7 @@ const AboutPageTwo = () => {
         {/* Vision */}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
           <div className="p-6">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Vision</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Notre Vision</h2>
             <p className="text-gray-700 dark:text-gray-300">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
               ipsum id neque laoreet tincidunt. Suspendisse potenti. Curabitur

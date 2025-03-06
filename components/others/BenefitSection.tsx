@@ -7,54 +7,50 @@ const BenefitsSection = ({ textCenter }: { textCenter: boolean }) => {
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         {!textCenter ? (
           <div className="flex flex-wrap items-center justify-center md:justify-between mb-12">
-            <h2 className="text-3xl md:text-5xl !text-center md:text-start font-bold  text-gray-900 dark:text-white border-l-4 p-2 border-l-rose-500 ">
-              Discover Our Advantages
+            <h2 className="text-3xl md:text-5xl !text-center md:text-start font-bold text-gray-900 dark:text-white border-l-4 p-2 border-l-rose-500">
+              Découvrez Nos Avantages
             </h2>
           </div>
         ) : (
-          <h2 className="text-3xl md:text-5xl font-bold text-start md:text-center text-gray-900 dark:text-white mb-12 border-l-4  border-l-rose-500 w-fit mx-auto p-2">
-            Discover Our Advantages
+          <h2 className="text-3xl md:text-5xl font-bold text-start md:text-center text-gray-900 dark:text-white mb-12 border-l-4 border-l-rose-500 w-fit mx-auto p-2">
+            Découvrez Nos Avantages
           </h2>
         )}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
           <div className="flex flex-col items-center space-y-4 bg-white dark:bg-gray-700 rounded-lg p-6 shadow-md">
             <Truck size={48} className="text-blue-500" />
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-              Free Shipping
+              Livraison Gratuite
             </h3>
             <p className="text-gray-700 dark:text-gray-300 text-center">
-              Enjoy free shipping on all orders with little minimum purchase
-              required.
+              Profitez de la livraison gratuite sur toutes les commandes avec un minimum d'achat requis.
             </p>
           </div>
           <div className="flex flex-col items-center space-y-4 bg-white dark:bg-gray-700 rounded-lg p-6 shadow-md">
             <RefreshCcw size={48} className="text-blue-500" />
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-              Easy Returns
+              Retours Faciles
             </h3>
             <p className="text-gray-700 dark:text-gray-300 text-center">
-              Return any item within 30 days for a full refund, no questions
-              asked.
+              Retournez n'importe quel article sous 30 jours pour un remboursement complet, sans questions.
             </p>
           </div>
           <div className="flex flex-col items-center space-y-4 bg-white dark:bg-gray-700 rounded-lg p-6 shadow-md">
             <DollarSign size={48} className="text-blue-500" />
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-              Best Prices
+              Meilleurs Prix
             </h3>
             <p className="text-gray-700 dark:text-gray-300 text-center">
-              Shop with confidence knowing you&apos;re getting the best prices
-              guaranteed.
+              Achetez en toute confiance avec la garantie des meilleurs prix.
             </p>
           </div>
           <div className="flex flex-col items-center space-y-4 bg-white dark:bg-gray-700 rounded-lg p-6 shadow-md">
             <Users size={48} className="text-blue-500" />
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-              24/7 Support
+              Support 24/7
             </h3>
             <p className="text-gray-700 dark:text-gray-300 text-center">
-              Our customer support team is available round the clock to assist
-              you.
+              Notre équipe de support client est disponible 24h/24 et 7j/7 pour vous aider.
             </p>
           </div>
         </div>

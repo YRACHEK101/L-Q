@@ -9,9 +9,9 @@ import Image from "next/image";
 
 // Define Zod schema for comment form data
 const commentSchema = z.object({
-  name: z.string().min(3, "Name Is Required"),
-  email: z.string().email("Email Not Valid"),
-  message: z.string().min(3, "Messgage is Required"),
+  name: z.string().min(3, "Le nom est requis"),
+  email: z.string().email("Email non valide"),
+  message: z.string().min(3, "Le message est requis"),
   image: z.string().optional(),
 });
 
@@ -33,19 +33,19 @@ const CommentSection: React.FC = () => {
     {
       name: "John Doe",
       email: "john@example.com",
-      message: "Great post!",
+      message: "Excellent article !",
       image: "/images/people/person.jpg",
     },
     {
       name: "Jane Smith",
       email: "jane@example.com",
-      message: "Awesome content!",
+      message: "Contenu superbe !",
       image: "/images/people/person.jpg",
     },
     {
       name: "Tom Williams",
       email: "tom@example.com",
-      message: "Keep it up!",
+      message: "Continuez comme ça !",
       image: "/images/people/person.jpg",
     },
   ]);
@@ -65,10 +65,10 @@ const CommentSection: React.FC = () => {
           onSubmit={handleSubmit(onSubmit)}
           className=" w-full p-4  bg-slate-100 dark:bg-slate-800 rounded-md "
         >
-          <h3 className="text-2xl font-semibold mb-4">Add a Comment</h3>
+          <h3 className="text-2xl font-semibold mb-4">Ajouter un Commentaire</h3>
           <div className="mb-4">
             <Label htmlFor="name" className="block ">
-              Name
+              Nom
             </Label>
             <Input
               type="text"
@@ -111,20 +111,20 @@ const CommentSection: React.FC = () => {
             type="submit"
             className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
           >
-            Submit
+            Envoyer
           </button>
         </form>
 
-        {/* Display comments */}
+        {/* Afficher les commentaires */}
         <div className="p-4">
-          <h3 className="text-2xl font-semibold mb-4">Comments</h3>
+          <h3 className="text-2xl font-semibold mb-4">Commentaires</h3>
           <ul className="space-y-4">
             {comments.map((comment, index) => (
               <li key={index} className="p-2 rounded-lg">
                 <div className="flex items-center gap-2">
                   <Image
                     src={comment.image || ""}
-                    alt="person image"
+                    alt="photo de profil"
                     width={30}
                     height={30}
                     className="rounded-full object-cover w-[30px] h-[30px]"

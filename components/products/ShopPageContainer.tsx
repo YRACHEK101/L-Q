@@ -95,7 +95,7 @@ const ShopPageContainer = ({
     return (
       <div className="flex items-center justify-center h-screen w-full flex-col gap-3">
         <Loader2 className="animate-spin text-xl" size={50} />
-        <p>Loading products..</p>
+        <p>Chargement des produits...</p>
       </div>
     );
   }
@@ -110,14 +110,14 @@ const ShopPageContainer = ({
           itemPerPage={itemsPerPage}
           currentPage={currentPage}
         />
-        <p>Sorry no result found with your filter selection</p>
+        <p>Désolé, aucun résultat trouvé avec vos critères de filtrage</p>
       </div>
     );
   }
 
   return (
     <div className="md:ml-4 p-2 md:p-0">
-      {/* product status and filter options */}
+      {/* état des produits et options de filtrage */}
       <ProductViewChange
         listView={listView}
         setListView={setListView}
@@ -126,7 +126,7 @@ const ShopPageContainer = ({
         currentPage={currentPage}
       />
 
-      {/* showing product list or cart view based on state */}
+      {/* affichage en liste ou en grille selon l'état */}
       {listView === true && (
         <div className="max-w-screen-xl mx-auto overflow-hidden py-4 md:py-8 gap-4 lg:gap-6">
           {paginatedData.map((product) => (
@@ -147,7 +147,7 @@ const ShopPageContainer = ({
         </div>
       )}
 
-      {/* product pagination here */}
+      {/* pagination des produits */}
       <Suspense fallback={<Loader />}>
         <Pagination
           totalPages={Math.ceil(filteredData.length / itemsPerPage)}

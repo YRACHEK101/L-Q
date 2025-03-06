@@ -18,6 +18,7 @@ const ProductQuantityChange = ({
         onClick={() => setQuantity(quantity - 1)}
         className="p-4 rounded-full"
         variant={"outline"}
+        aria-label="Diminuer la quantité"
       >
         <Minus />
       </Button>
@@ -26,6 +27,7 @@ const ProductQuantityChange = ({
         onClick={() => setQuantity(quantity + 1)}
         className="p-4 rounded-full"
         variant={"outline"}
+        aria-label="Augmenter la quantité"
       >
         <Plus />
       </Button>

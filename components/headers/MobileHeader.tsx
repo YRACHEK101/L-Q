@@ -32,25 +32,25 @@ const MobileHeader = () => {
   const userLinks = [
     {
       link: "/my-account",
-      label: "My Account",
+      label: "Mon Compte",
       icon: <User />,
       isActive: pathname.includes("/my-account"),
     },
     {
       link: "/wishlist",
-      label: "Wishlist",
+      label: "Liste de Souhaits",
       icon: <Heart />,
       isActive: pathname.includes("/wishlist"),
     },
     {
       link: "/my-orders",
-      label: "My Orders",
+      label: "Mes Commandes",
       icon: <ListOrdered />,
       isActive: pathname.includes("/my-orders"),
     },
     {
       link: "/help",
-      label: "Help",
+      label: "Aide",
       icon: <HelpCircle />,
       isActive: pathname.includes("/help"),
     },
@@ -59,19 +59,19 @@ const MobileHeader = () => {
   const navlinks = [
     {
       link: "/",
-      label: "Home",
+      label: "Accueil",
       icon: <Home />,
       isActive: pathname === "/",
     },
     {
       link: "/shop",
-      label: "Shop",
+      label: "Boutique",
       icon: <Store />,
       isActive: pathname.includes("/shop"),
     },
     {
       link: "/blog",
-      label: "Blogs",
+      label: "Blog",
       icon: <Text />,
       isActive: pathname.includes("/blog"),
     },
@@ -87,7 +87,7 @@ const MobileHeader = () => {
           <SheetHeader>
             <SheetDescription>
               <ul className="space-y-1 text-start text-lg p-2">
-                {/* navigation links here */}
+                {/* liens de navigation ici */}
                 {navlinks.map((link) => (
                   <Link
                     key={link.link}
@@ -102,14 +102,14 @@ const MobileHeader = () => {
                   </Link>
                 ))}
                 <Separator className="!my-2" />
-                {/* theme toggle option here */}
+                {/* option de thème ici */}
                 <div className="flex items-center gap-2">
                   <ThemeToggle />
-                  <p>Change Theme</p>
+                  <p>Changer le Thème</p>
                 </div>
                 <Separator className="!my-2" />
 
-                {/* user retated options here */}
+                {/* options utilisateur ici */}
                 {userLinks.map((link) => (
                   <Link
                     key={link.link}
@@ -125,7 +125,7 @@ const MobileHeader = () => {
                 <Separator className="!my-2" />
                 <button className="flex items-start justify-start gap-2 p-2 bg-transparent hover:opacity-50">
                   <LogOut />
-                  Logout
+                  Déconnexion
                 </button>
               </ul>
             </SheetDescription>

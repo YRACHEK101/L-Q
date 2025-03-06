@@ -16,7 +16,7 @@ const SpecialDeals = ({ textCenter }: { textCenter: boolean }) => {
             textCenter ? "text-center" : "text-left"
           )}
         >
-          Special Deals
+          Offres Spéciales
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {productsData.slice(0, 4).map((deal) => (
@@ -40,11 +40,11 @@ const SpecialDeals = ({ textCenter }: { textCenter: boolean }) => {
                       <div className="py-2 flex items-center gap-3">
                         <div>
                           <p className="text-2xl font-medium">{days < 10 && '0'}{days} :</p>
-                          <small>Days</small>
+                          <small>Jours</small>
                         </div>
                         <div>
                           <p className="text-2xl font-medium">{hours < 10 && '0'}{hours} :</p>
-                          <small>Hours</small>
+                          <small>Heures</small>
                         </div>
                         <div>
                           <p className="text-2xl font-medium">{minutes < 10 && '0'}{minutes} :</p>
@@ -52,7 +52,7 @@ const SpecialDeals = ({ textCenter }: { textCenter: boolean }) => {
                         </div>
                         <div>
                           <p className="text-2xl font-medium">{seconds < 10 && '0'}{seconds}</p>
-                          <small>Seconds</small>
+                          <small>Secondes</small>
                         </div>
                       </div>
                     );
@@ -66,20 +66,20 @@ const SpecialDeals = ({ textCenter }: { textCenter: boolean }) => {
                 <div className="flex items-center justify-between gap-4 lg:gap-2">
                   <div className="flex flex-col lg:flex-row items-center lg:items-start">
                     <span className="text-muted-foreground text-sm line-through mr-2">
-                      ${deal.price}
+                      {deal.price} €
                     </span>
                     <span className="text-green-500 text-xl mx-1 font-semibold">
-                      ${deal.price - deal.discount}
+                      {deal.price - deal.discount} €
                     </span>
                     <span className="text-sm ml-1 text-rose-500">
-                      (${deal.discount} off)
+                      ({deal.discount} € de réduction)
                     </span>
                   </div>
                   <Link
                     href={`/shop/${deal.id}`}
                     className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg inline-block text-center whitespace-nowrap"
                   >
-                    View Deal
+                    Voir l'Offre
                   </Link>
                 </div>
               </div>

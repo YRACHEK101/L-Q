@@ -8,16 +8,16 @@ const PopularPosts = () => {
     <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md">
       <div className="p-6">
         <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-          Popular Posts
+          Articles Populaires
         </h2>
         <ul className="space-y-4">
           {blogPosts.map((post) => (
             <li key={post.title} className="flex items-center space-x-4">
-              {/* Display post thumbnail */}
+              {/* Afficher la miniature de l'article */}
               <div className="flex-shrink-0 relative h-12 w-12 rounded-lg overflow-hidden">
                 <Image
                   src={post.image}
-                  alt={post.title}
+                  alt={`Image pour ${post.title}`}
                   fill
                   objectFit="cover"
                 />

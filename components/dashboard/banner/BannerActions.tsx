@@ -4,9 +4,6 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-
-
-
 import { MoreHorizontal } from "lucide-react";
 import Link from "next/link";
 
@@ -22,12 +19,12 @@ const BannerActions = () => {
         <PopoverContent className="text-start">
           <Link
             href={`/dashboard/orders/id`}
-            className="py-2 px-4 rounded-md w-full  block hover:bg-slate-200 dark:hover:bg-slate-900"
+            className="py-2 px-4 rounded-md w-full block hover:bg-slate-200 dark:hover:bg-slate-900"
           >
-            Update Banner
+            Modifier la Bannière
           </Link>
           <button className="w-full text-start hover:bg-slate-200 dark:hover:bg-slate-900 py-2 px-4 rounded-md">
-            Delete Banner
+            Supprimer la Bannière
           </button>
         </PopoverContent>
       </Popover>
